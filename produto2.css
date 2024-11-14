@@ -1,0 +1,176 @@
+.cabecalho-catalogo {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+main {
+    padding: 1.5rem;
+}
+
+.container-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.produto.Amazon {
+    background-color: #232F3E;
+}
+
+.produto.Mercado_Livre {
+    background-color: #ffce52;
+}
+
+.produto.Magalu {
+    background-color: rgb(0, 134, 255);
+ 
+}
+
+.produto.hp {
+    background-color: #0096D6;
+}
+
+.produto.Pichau {
+    background-color: #303030;
+}
+
+
+.produto {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    flex: 1 1 calc(25% - 1rem);
+    box-sizing: border-box;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+}
+
+.produto:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.link-produto {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    flex-grow: 1; 
+}
+
+.wrapper-imagem-produto {
+    background-color:white;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    width: 90%;
+    height: 200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-produto {
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    border-radius: 5px;
+    transition: opacity 0.3s;
+}
+
+.imagem-produto:hover {
+    opacity: 0.8;
+}
+
+.nome-loja, .nome-produto, .preco-produto {
+    margin: 0.5rem 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.nome-loja {
+    height: 20px;
+}
+
+.nome-loja:hover {
+    color: #aaff00;
+}
+
+.nome-produto {
+    min-height: 120px; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    font-size: 1.2rem; 
+}
+
+.nome-produto:hover {
+    color: #00aaff; 
+}
+
+.preco-produto {
+    height: 25px; 
+}
+
+.preco-produto:hover {
+    color: #ff9999; 
+}
+
+.container-botoes {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: auto; 
+    justify-content: center;
+}
+
+.ver-oferta,
+.comentarios-produto {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    flex: 1;
+    text-align: center;
+}
+
+.ver-oferta {
+    background-color: #ff0000e1; 
+}
+
+.comentarios-produto {
+    background-color: #09571bc7;
+}
+
+.ver-oferta:hover, .comentarios-produto:hover {
+    background-color: #555;
+}
+
+/* Estilos para a navegação de paginação */
+.navegacao-paginacao {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navegacao-paginacao button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navegacao-paginacao button.active {
+    background-color: #0056b3;
+}

@@ -1,0 +1,38 @@
+.pesquisa_teste {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+  
+#barra_de_pesquisa {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#escreva_a_pesquisa {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#barra_de_pesquisa button {
+    padding: 8px 16px;
+    margin-left: 8px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#barra_de_pesquisa button:hover {
+    background-color: #0056b3;
+}
